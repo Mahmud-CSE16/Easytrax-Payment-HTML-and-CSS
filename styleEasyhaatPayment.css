@@ -1,0 +1,152 @@
+.m-body{
+    font-family: 'Poppins';
+    color: #1C1C1C;
+
+}
+
+.m-img-div{
+    padding: 20px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background: white;
+    opacity: 1.0;
+    z-index: 10;
+}
+
+.m-img{
+    height: 60px;
+}
+
+.m-content-div{
+    max-width: 550px;
+    
+    padding: 20px 20px;
+    
+    border: 1px solid #B9B9B9;
+    border-radius: 10px;
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (max-width: 544px) {
+	.m-content-div{
+        border: none;
+	}
+}
+
+.m-left-col{
+    text-align: left;
+    color: #272727;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 5px;
+}
+
+.m-right-col{
+    text-align: right;
+    color: #B9B9B9;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.m-input{
+    background: #F1F1F1;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.m-input-coupon{
+    background: #FFF0E7;
+}
+
+input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+.m-input:focus{
+    border: 1px #0060A4 solid;
+}
+
+.m-offer-div{
+    width: 47%;
+    border: 1px #CECECE solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.m-offer-div:hover{
+    border: 1px #0060A4 solid;
+}
+
+.m-offer-div span{
+    font-size: 12px;
+}
+
+.m-offer-div .offer{
+    display: inline-block;
+    padding: 2px;
+    width: 45px;
+    color:white;
+    background-color: #F26611;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.m-offer-div p{
+    margin: 0px;
+    margin-top: 5px;
+    color: #0060A4;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.m-offer-div small{
+    text-decoration: line-through;
+    color: #868686;
+}
+
+
+
+/*custom radio button*/
+.rad{
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.rad > input{ /* HIDE ORG RADIO & CHECKBOX */
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* RADIO & CHECKBOX STYLES */
+/* DEFAULT <i> STYLE */
+.rad > i{ 
+  display: inline-block;
+  vertical-align: middle;
+  width:  16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: 0.2s;
+  box-shadow: inset 0 0 0 8px #fff;
+  border: 1px solid gray;
+  background: gray;
+}
+.rad:hover > i{ /* HOVER <i> STYLE */
+  box-shadow: inset 0 0 0 3px #fff;
+  background: gray;
+}
+.rad > input:checked + i{ /* (RADIO CHECKED) <i> STYLE */
+  box-shadow: inset 0 0 0 2px #fff;
+  background: #0060A4;
+}
+
+
+input[value="invoiceCheck"]:checked ~ div[id="invoiceEmailBox"]{
+display:none;
+}
+

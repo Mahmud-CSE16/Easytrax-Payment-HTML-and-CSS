@@ -56,6 +56,14 @@
     width: 100%;
     border: none;
     padding: 10px;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+.m-input:focus{
+    border: 1px #0060A4 solid;
 }
 
 .m-offer-div{

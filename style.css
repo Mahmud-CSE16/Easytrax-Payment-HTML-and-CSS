@@ -73,7 +73,7 @@ input:focus, textarea:focus, select:focus{
     padding: 10px;
 }
 
-.m-offer-div.active{
+.m-offer-div:hover{
     border: 1px #0060A4 solid;
 }
 

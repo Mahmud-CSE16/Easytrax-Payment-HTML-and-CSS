@@ -27,6 +27,13 @@
     border-radius: 10px;
 }
 
+/* Small devices (landscape phones, 544px and up) */
+@media (max-width: 544px) {
+	.m-content-div{
+        border: none;
+	}
+}
+
 .m-left-col{
     text-align: left;
     color: #272727;

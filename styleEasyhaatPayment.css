@@ -15,7 +15,7 @@
 }
 
 .m-img{
-    height: 60px;
+    height: 50px;
 }
 
 .m-content-div{
@@ -49,6 +49,12 @@
     font-size: 12px;
     margin: 0px;
     padding: 0px;
+}
+
+
+.m-title{
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .m-input{

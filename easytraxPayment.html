@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" >
+   
+    <title>Easytrax</title>
+    <link rel="icon" type="image/png" href="images/easytrax.png" sizes="16x16" />
+    
+     <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!--google fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body class="m-body">
+ 
+  <div align="center">
+     <div class="m-img-div">
+         <a href="#"><img class="m-img" src="images/easytrax.png" alt="icon"></a>
+     </div>
+
+      <div class="m-content-div mt-1 mb-4" align="start" >
+         
+          <div class="row">
+              <div class="col-6 m-left-col">
+                  <p class="left-p">
+                      EASYTRAX <br> PAYMENT
+                  </p>
+              </div>
+              <div class="col-6 m-right-col">
+                  <p class="right-p">
+                    Any Problem? Read FAQ or
+                    Email <a style="color: #b9b9b9" href="mailto:support@easytrax.com.bd">support@easytrax.com.bd</a> or
+                    Call <a style="color: #b9b9b9" href="tel:+8809606667788">+8809606667788</a> for Help! <br>
+                  </p>
+              </div>
+          </div>
+          
+          <form style="margin-top: 20px;">
+             <div class="row">
+                 <div class="form-group col-md-6">
+                    <label for="mobileNumber">Mobile Number</label>
+                    <input type="tel" class="m-input" id="mobileNumber" placeholder="01xxxxxxxx">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="amount">Amount (TK)</label>
+                    <input type="number" class="m-input" id="amount">
+                  </div>
+             </div>
+              <div class="form-group">
+                <label for="purpose">Purpose of Payment</label>
+                <input type="text" class="m-input" id="purpose">
+              </div>
+              
+              <div>
+                  <h6>Payment Offers</h6>
+              </div>
+              <div class="d-flex justify-content-between" style="margin-top: 12px;">
+                <div class="m-offer-div active">
+                   <div class="d-flex justify-content-between">
+                    <span>6 months payment</span>
+                    <span class="offer">offer</span>
+                 </div>
+                <p>
+                    2700 Tk <small>3000 tk</small>
+                </p>
+                </div>
+                 <div class="m-offer-div">
+                   <div class="d-flex justify-content-between">
+                    <span>12 months payment</span>
+                    <span class="offer">offer</span>
+                 </div>
+                <p>
+                    5500 Tk <small>6000 tk</small>
+                </p>
+                </div>
+              </div>
+              
+              <div class="mt-4 m-radio">
+                <h6>Choose Payment Method</h6>
+                <div class="ml-3">
+                   <label class="rad">
+                  <input type="radio" name="rad1" value="a" checked>
+                  <i></i> bKash
+                </label>
+                <br>
+                <label class="rad">
+                  <input type="radio" name="rad1" value="b">
+                  <i></i> Nagad
+                </label>
+                <br>
+                <label class="rad">
+                  <input type="radio" name="rad1" value="b">
+                  <i></i> Cards/Mobile Banking/Net Banking
+                </label>
+                    
+                </div>
+              </div>
+              
+              <div class="custom-control custom-checkbox mt-3">
+                  <input onclick="myFunction()" type="checkbox" value="invoiceCheck" class="custom-control-input" id="invoiceCheck" name="invoiceCheck">
+                  <label class="custom-control-label" for="invoiceCheck">Get invoice in my Email</label>
+                </div>
+                
+                <div class="form-group mt-2" id="emailDiv" style="display: none">
+                    <label for="amount">Eamail Address</label>
+                    <input type="email" class="form-control p-3" id="email" placeholder="example@gamil.com">
+                  </div>     
+              
+              
+              
+              <button type="submit" class="btn btn-primary mt-3 w-100" style="background-color:#0060A4;">Make Payment</button>
+        </form>
+        <div class="mt-3" align="center">
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+      
+      
+
+<!--javascript for email box hide and show-->
+<script>
+function myFunction() {
+  var x = document.getElementById("emailDiv");
+  let myInput = document.getElementById('email');
+  if (x.style.display === "none") {
+    x.style.display = "block";
+      myInput.focus();
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+      
+  </div>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+</body>
+</html>

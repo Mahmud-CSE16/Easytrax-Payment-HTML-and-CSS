@@ -1,0 +1,18 @@
+<html>
+<head>
+<style>
+input[value="1"]:checked ~ div[id="1"]{
+display:none;
+}
+input[value="2"]:checked ~ div[id="2"]{
+display:none;
+}
+</style>
+</head>
+<body>
+<input type="radio" name="hider" value="1">
+<input type="radio" name="hider" value="2">
+<div id="1">div 1</div>
+<div id="2">div 2</div>
+</body>
+</html>

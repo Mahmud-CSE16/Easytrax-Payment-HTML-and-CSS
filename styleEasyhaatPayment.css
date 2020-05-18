@@ -261,3 +261,12 @@ display:none;
     display: inline;
     float: left;
 }
+
+
+
+/*failure*/
+
+.dot{
+    margin-top: 7px;
+    margin-right: 15px;
+}

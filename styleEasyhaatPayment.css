@@ -190,7 +190,7 @@ display:none;
 /* Small devices (landscape phones, 544px and up) */
 @media (max-width: 577px) {
 	.m-cards{
-        width: 600px;
+        width: 560px;
     }
 }
 

@@ -162,7 +162,7 @@ display:none;
 
 .confirm-text{
     color: #272727;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     margin-left: 10px;
 }
@@ -183,6 +183,18 @@ display:none;
     color: black;
     text-decoration: none;
 }
+
+.m-cards{
+    width: 900px;
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (max-width: 577px) {
+	.m-cards{
+        width: 600px;
+    }
+}
+
 .card-title{
     font-weight: 600;
 }

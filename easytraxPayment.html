@@ -1,123 +1,163 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
-    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="" >
-   
-    <title>Easytrax</title>
-    <link rel="icon" type="image/png" href="images/easytrax.png" sizes="16x16" />
-    
-     <!-- custom css -->
-    <link rel="stylesheet" type="text/css" href="styleEasytraxPayment.css">
-    
-    <!--google fonts-->
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    
-    <!--bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+
+  <title>Easytrax</title>
+  <link rel="icon" type="image/png" href="images/easytrax.png" sizes="16x16" />
+
+  <!-- custom css -->
+  <link rel="stylesheet" type="text/css" href="styleEasytraxPayment.css">
+
+  <!--google fonts-->
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
+
 <body class="m-body">
- 
+
   <div align="center">
     <!--top icon-->
-     <div class="m-img-div">
-         <a href="#"><img class="m-img" src="images/easytrax.png" alt="icon"></a>
-     </div>
+    <div class="m-img-div">
+      <a href="#"><img class="m-img" src="images/easytrax.png" alt="icon"></a>
+    </div>
 
-     <!--main container-->
-      <div class="m-content-div mt-1 mb-4" align="start" >
-         
-          <div class="row">
-              <div class="col-5 m-left-col">
-                  <p class="left-p">
-                      EASYTRAX <br> PAYMENT
-                  </p>
-              </div>
-              <div class="col-7 m-right-col">
-                  <p class="right-p">
-                    Any Problem? Read FAQ or
-                    Email <a style="color: #b9b9b9" href="mailto:support@easytrax.com.bd">support@easytrax.com.bd</a> or
-                    Call <a style="color: #b9b9b9" href="tel:+8809606667788">+8809606667788</a> for Help! <br>
-                  </p>
-              </div>
+    <!--main container-->
+    <div class="m-content-div mt-1 mb-4" align="start">
+
+      <div class="row">
+        <div class="col-5 m-left-col">
+          <p class="left-p">
+            EASYTRAX <br> PAYMENT
+          </p>
+        </div>
+        <div class="col-7 m-right-col">
+          <p class="right-p">
+            Any Problem? Read FAQ or
+            Email <a style="color: #b9b9b9" href="mailto:support@easytrax.com.bd">support@easytrax.com.bd</a> or
+            Call <a style="color: #b9b9b9" href="tel:+8809606667788">+8809606667788</a> for Help! <br>
+          </p>
+        </div>
+      </div>
+
+      <!--form-->
+      <form style="margin-top: 20px;">
+        <div class="row">
+
+          <!--mobile-->
+          <div class="form-group col-md-6">
+            <label class="m-title" for="mobileNumber">Mobile Number</label>
+            <input type="tel" class="m-input" id="mobileNumber" placeholder="01xxxxxxxx">
           </div>
-          
-          <!--form-->
-          <form style="margin-top: 20px;">
-             <div class="row">
-                
-                <!--mobile-->
-                 <div class="form-group col-md-6">
-                    <label class="m-title" for="mobileNumber">Mobile Number</label>
-                    <input type="tel" class="m-input" id="mobileNumber" placeholder="01xxxxxxxx">
-                  </div>
-                  
-                  <!--amount-->
-                  <div class="form-group col-md-6">
-                    <label class="m-title" for="amount">Amount (TK)</label>
-                    <input type="number" class="m-input" id="amount">
-                  </div>
-             </div>
-             
-             <!--purpose of payment-->
-              <div class="form-group">
-                <label class="m-title" for="purpose">Purpose of Payment</label>
-                <input type="text" class="m-input" id="purpose">
+
+          <!--amount-->
+          <div class="form-group col-md-6">
+            <label class="m-title" for="amount">Amount (TK)</label>
+            <input type="number" class="m-input" id="amount">
+          </div>
+        </div>
+
+        <!--purpose of payment-->
+        <div class="form-group">
+          <label class="m-title" for="purpose">Purpose of Payment</label>
+          <input type="text" class="m-input" id="purpose">
+        </div>
+
+
+        <!--payment offers-->
+        <section>
+          <div>
+            <h6 class="m-title">Payment Offers</h6>
+          </div>
+          <div class="d-flex justify-content-between" style="margin-top: 12px;">
+            <div onclick="setOfferAmount(2700)" class="m-offer-div">
+              <div class="d-flex justify-content-between">
+                <span>6 months payment</span>
+                <p class="p-0 m-0"><span class="offer">offer</span></p>
               </div>
-              
-              
-              <!--payment offers-->
-              <div>
-                  <h6 class="m-title">Payment Offers</h6>
+              <p>
+                2700 Tk <small>3000 tk</small>
+              </p>
+            </div>
+
+            <div onclick="setOfferAmount(5500)" class="m-offer-div">
+              <div class="d-flex justify-content-between ">
+                <span>12 months payment</span>
+                <p class="p-0 m-0"><span class="offer">offer</span></p>
               </div>
-              <div class="d-flex justify-content-between" style="margin-top: 12px;">
-                <div onclick="setOfferAmount(2700)" class="m-offer-div">
-                   <div class="d-flex justify-content-between">
-                    <span>6 months payment</span>
-                    <p class="p-0 m-0"><span class="offer">offer</span></p>
-                 </div>
-                <p>
-                    2700 Tk <small>3000 tk</small>
-                </p>
-                </div>
-                
-                 <div onclick="setOfferAmount(5500)" class="m-offer-div">
-                   <div class="d-flex justify-content-between ">
-                    <span>12 months payment</span>
-                    <p class="p-0 m-0"><span class="offer">offer</span></p>
-                 </div>
-                <p>
-                    5500 Tk <small>6000 tk</small>
-                </p>
-                </div>
+              <p>
+                5500 Tk <small>6000 tk</small>
+              </p>
+            </div>
+          </div>
+
+          <!-- update -->
+          <!-- with mango offer -->
+          <div class="d-flex justify-content-between" style="margin-top: 12px;">
+            <div onclick="setOfferAmount(3000)" class="m-offer-div">
+              <div class="d-flex justify-content-between">
+                <span>6 months payment</span>
+                <p class="p-0 m-0"><span class="offer">offer</span></p>
               </div>
-              
-              
-              <!--payment method-->
-              <div class="mt-4 m-radio">
-                <h6 class="m-title">Choose Payment Method</h6>
-                <div class="ml-3">
-                   <label class="m-title rad">
-                  <input type="radio" name="rad1" value="a" checked>
-                  <i></i> <span class="ml-2">bKash</span>
-                </label>
-                <br>
-                <label class="m-title rad mt-1">
-                  <input type="radio" name="rad1" value="b">
-                  <i></i> <span class="ml-2">Nagad</span>
-                </label>
-                <br>
-                <label class="m-title rad mt-1">
-                  <input type="radio" name="rad1" value="b">
-                  <i></i> <span class="ml-2">Cards/Mobile Banking/Net Banking</span>
-                </label>
-                    
-                </div>
+              <p class="d-flex justify-content-between align-baseline">
+                3000 Tk <span class="mt-1" style="color: #F26611;">5KG Mango Free</span>
+              </p>
+              <div class="d-flex justify-content-between align-baseline mt-1">
+                <span>Offer Valid till</span>
+                <span>25/06/2020</span>
               </div>
-              
-              <!--get invoice checkbox-->
-              <!--<div class="custom-control custom-checkbox mt-3">
+            </div>
+
+            <div onclick="setOfferAmount(6000)" class="m-offer-div">
+              <div class="d-flex justify-content-between ">
+                <span>12 months payment</span>
+                <p class="p-0 m-0"><span class="offer">offer</span></p>
+              </div>
+              <p class="d-flex justify-content-between align-baseline">
+                6000 Tk <span class="mt-1" style="color: #F26611;">10KG Mango Free</span>
+              </p>
+              <div class="d-flex justify-content-between align-baseline mt-1">
+                <span>Offer Valid till</span>
+                <span>25/06/2020</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- end update -->
+
+
+
+          <!--payment method-->
+          <div class="mt-4 m-radio">
+            <h6 class="m-title">Choose Payment Method</h6>
+            <div class="ml-3">
+              <label class="m-title rad">
+                <input type="radio" name="rad1" value="a" checked>
+                <i></i> <span class="ml-2">bKash</span>
+              </label>
+              <br>
+              <label class="m-title rad mt-1">
+                <input type="radio" name="rad1" value="b">
+                <i></i> <span class="ml-2">Nagad</span>
+              </label>
+              <br>
+              <label class="m-title rad mt-1">
+                <input type="radio" name="rad1" value="b">
+                <i></i> <span class="ml-2">Cards/Mobile Banking/Net Banking</span>
+              </label>
+
+            </div>
+          </div>
+        </section>
+
+        <!--get invoice checkbox-->
+        <!--<div class="custom-control custom-checkbox mt-3">
                   <input onclick="myFunction()" type="checkbox" value="invoiceCheck" class="custom-control-input" id="invoiceCheck" name="invoiceCheck">
                   <label class="custom-control-label" for="invoiceCheck">Get invoice in my Email</label>
                 </div>
@@ -127,44 +167,51 @@
                     <input type="email" class="m-input" id="email" placeholder="example@gmail.com">
                   </div>     
               -->
-              
-              
-              <button type="submit" class="btn btn-primary mt-3 w-100" style="background-color:#0060A4;">Make Payment</button>
-        </form>
-        
-        <!--terms and conditions-->
-        <div class="mt-3" align="center">
-          <a href="#" style="color: #0060A4; font-size:14px;">Terms &amp; Conditions</a>
-        </div>
-      </div>
-      
-      
 
-<!--javascript for email box hide and show-->
-<script>
-/*function myFunction() {
-  var x = document.getElementById("emailDiv");
-  let myInput = document.getElementById('email');
-  if (x.style.display === "none") {
-    x.style.display = "block";
-      myInput.focus();
-  } else {
-    x.style.display = "none";
-  }
-}*/
-    
-function setOfferAmount(x) {
-  /*var x = document.getElementById("offerAmount").textContent;
-    console.log(x);*/
-  document.getElementById("amount").value = x;  
-}
-</script>
-      
+
+        <button type="submit" class="btn btn-primary mt-3 w-100" style="background-color:#0060A4;">Make Payment</button>
+      </form>
+
+      <!--terms and conditions-->
+      <div class="mt-3" align="center">
+        <a href="#" style="color: #0060A4; font-size:14px;">Terms &amp; Conditions</a>
+      </div>
+    </div>
+
+
+
+    <!--javascript for email box hide and show-->
+    <script>
+      /*function myFunction() {
+        var x = document.getElementById("emailDiv");
+        let myInput = document.getElementById('email');
+        if (x.style.display === "none") {
+          x.style.display = "block";
+            myInput.focus();
+        } else {
+          x.style.display = "none";
+        }
+      }*/
+
+      function setOfferAmount(x) {
+        /*var x = document.getElementById("offerAmount").textContent;
+          console.log(x);*/
+        document.getElementById("amount").value = x;
+      }
+    </script>
+
   </div>
 
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>

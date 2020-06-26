@@ -1,0 +1,279 @@
+.m-body{
+    font-family: 'Poppins';
+    color: #1C1C1C;
+}
+
+.m-img-div{
+    padding: 20px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background: white;
+    opacity: 1.0;
+    z-index: 10;
+}
+
+.m-header-text{
+    color: #272727;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0px;
+    letter-spacing: 4px;
+}
+
+.m-img{
+    height: 80px;
+}
+
+.m-content-div{
+    max-width: 550px;
+    
+    padding: 20px 20px;
+    
+    border: 1px solid #C9C9C9;
+    border-radius: 10px;
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (max-width: 544px) {
+	.m-content-div{
+        border: none;
+	}
+}
+
+.m-left-col{
+    text-align: left;
+    color: #272727;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 5px;
+}
+
+.m-right-col{
+    text-align: right;
+    color: #B9B9B9;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.m-title{
+    font-size: 12px;
+    font-weight: 600px;
+}
+
+.m-input{
+    background: #F1F1F1;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+.m-input:focus{
+    border: 1px #0060A4 solid;
+}
+
+/* .m-offer-div{
+    width: 47%;
+    border: 1px #CECECE solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.m-offer-div:hover{
+    border: 1px #0060A4 solid;
+}
+
+.m-offer-div span{
+    font-size: 12px;
+}
+
+.m-offer-div .offer{
+    display: inline-block;
+    padding: 2px;
+    width: 45px;
+    color:white;
+    background-color: #F26611;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.m-offer-div p{
+    margin: 0px;
+    margin-top: 5px;
+    color: #0060A4;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.m-offer-div small{
+    text-decoration: line-through;
+    color: #868686;
+}
+ */
+
+
+
+/*custom radio button*/
+.rad{
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.rad > input{ /* HIDE ORG RADIO & CHECKBOX */
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* RADIO & CHECKBOX STYLES */
+/* DEFAULT <i> STYLE */
+.rad > i{ 
+  display: inline-block;
+  vertical-align: middle;
+  width:  16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: 0.2s;
+  box-shadow: inset 0 0 0 8px #fff;
+  border: 1px solid gray;
+  background: gray;
+}
+.rad:hover > i{ /* HOVER <i> STYLE */
+  box-shadow: inset 0 0 0 3px #fff;
+  background: gray;
+}
+.rad > input:checked + i{ /* (RADIO CHECKED) <i> STYLE */
+  box-shadow: inset 0 0 0 2px #fff;
+  background: #0060A4;
+}
+
+
+input[value="invoiceCheck"]:checked ~ div[id="invoiceEmailBox"]{
+display:none;
+}
+
+
+
+
+/*success page*/
+
+.confirm-text{
+    color: #272727;
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.m-td{
+    color: #272727;
+    font-weight: 600;
+    font-size: 14px;
+}
+.m-gray-color{
+    color: #9E9E9E;
+}
+/* .m-others-item-text{
+    color: #0060A4;
+    font-size: 14px;
+}
+.m-others-item-text:hover{
+    color: black;
+    text-decoration: none;
+}
+.card-title{
+    font-weight: 600;
+}
+
+.m-inner{
+    border-radius: 4px;
+    overflow: hidden;
+}
+.m-inner-img{
+    transition-duration: 1s;
+}
+.m-inner-img-hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.m-cards-div{
+    overflow-x: scroll;
+} */
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* .m-cards-div::-webkit-scrollbar {
+    display: none;
+} */
+
+/* Hide scrollbar for IE and Edge */
+/* .m-cards-div {
+    -ms-overflow-style: none;
+}
+
+.m-cards{
+    width: 800px;
+}
+
+
+.card-bottom-text{
+    font-size: 13px;
+    color: #6A6A6A;
+}
+
+.m-b-title{
+    color: #727272;
+    font-weight: 600;
+}
+
+.m-easyhaat-div{
+    border: 2px #0060A4 solid;
+    border-radius: 5px;
+    padding: 8px;
+    padding-left: 25px;
+    padding-right: 25px;    
+}
+
+.survey-div{
+    font-size: 14px;
+    max-width: 900px; background: #F2F2F2; display:flex; align-items:center;
+}
+.survey-link-div{
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px #707070 solid;
+    border-radius: 5px;
+} */
+
+.footer-link-div{
+    height: 40px;
+    width: 40px;
+    border: 1px #0060A4 solid;
+    border-radius: 5px;
+    color: #0060A4;
+    display:flex; 
+    align-items:center;
+    font-size: 20px;
+    display: inline;
+    float: left;
+}
+
+
+
+/*failure*/
+
+.dot{
+    margin-top: 7px;
+    margin-right: 15px;
+}

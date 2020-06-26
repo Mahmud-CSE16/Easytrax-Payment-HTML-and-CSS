@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+
+  <title>Easytrax</title>
+  <link rel="icon" type="image/png" href="images/gub_logo.png" sizes="16x16" />
+
+  <!-- custom css -->
+  <link rel="stylesheet" type="text/css" href="GUBPayment.css">
+
+  <!--google fonts-->
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body class="m-body">
+
+  <div align="center">
+    <!--top icon-->
+    <div class="m-img-div">
+      <a href="#"><img class="m-img" src="images/gub_logo.png" alt="icon"></a>
+      <h5 class="m-header-text">German University Bangladesh</h5>
+    </div>
+
+    <!--main container-->
+    <div class="m-content-div mt-1 mb-4" align="start">
+
+      <div class="row">
+        <div class="col-5 m-left-col">
+          <p class="left-p">
+            TUTION FEE <br> PAYMENT
+          </p>
+        </div>
+        <div class="col-7 m-right-col">
+          <p class="right-p">
+            Any Problem? Read FAQ or
+            Email <a style="color: #b9b9b9" href="mailto:support@easytrax.com.bd">info@gub.edu.bd</a> or <br>
+            Call <a style="color: #b9b9b9" href="tel:+88028870694">+88-02-8870694</a> for Help! <br>
+          </p>
+        </div>
+      </div>
+
+      <!--form-->
+      <form style="margin-top: 20px;">
+        <div class="row">
+
+          <!--mobile-->
+          <div class="form-group col-md-6">
+            <label class="m-title" for="studentid">Student ID</label>
+            <input type="text" class="m-input" id="studentid" placeholder="xxxxxxxx">
+          </div>
+
+          <!--amount-->
+          <div class="form-group col-md-6">
+            <label class="m-title" for="studentname">Student Name</label>
+            <input type="text" class="m-input" id="studentname" placeholder="e.g. Md. Ashiqul Amin">
+          </div>
+        </div>
+
+        <div class="row">
+
+          <!--mobile-->
+          <div class="form-group col-md-6">
+            <label class="m-title" for="intake">Intake</label>
+            <input type="number" class="m-input" id="intake" placeholder="25">
+          </div>
+
+          <!--amount-->
+          <div class="form-group col-md-6">
+            <label class="m-title" for="amount">Amount (TK)</label>
+            <input type="number" class="m-input" id="amount" placeholder="10,000">
+          </div>
+        </div>
+
+        <!--purpose of payment-->
+        <div class="form-group">
+          <label class="m-title" for="purpose">Purpose of Payment</label>
+          <input type="text" class="m-input" id="purpose">
+        </div>
+
+        
+        <!-- payment method -->
+        <div class="mt-4 m-radio">
+          <h6 class="m-title">Choose Payment Method</h6>
+          <div class="ml-3">
+            <label class="m-title rad">
+              <input type="radio" name="rad1" value="a" checked>
+              <i></i> <span class="ml-2">bKash</span>
+            </label>
+            <br>
+            <label class="m-title rad mt-1">
+              <input type="radio" name="rad1" value="b">
+              <i></i> <span class="ml-2">Nagad</span>
+            </label>
+            <br>
+            <label class="m-title rad mt-1">
+              <input type="radio" name="rad1" value="c">
+              <i></i> <span class="ml-2">roket</span>
+            </label>
+            <br>
+            <label class="m-title rad mt-1">
+              <input type="radio" name="rad1" value="d">
+              <i></i> <span class="ml-2">Cards/Mobile Banking/Net Banking</span>
+            </label>
+
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3 w-100" style="background-color:#0060A4;">Make Payment</button>
+      </form>
+
+      <!--terms and conditions-->
+      <div class="mt-3" align="center">
+        <a href="#" style="color: #0060A4; font-size:14px;">Terms &amp; Conditions</a>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
